@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.5</TargetFramework>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+    <Copyright>Vladimir Rogozhin</Copyright>
+    <Company>Vladimir Rogozhin</Company>
+    <Authors>Vladimir Rogozhin</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog" Version="2.6.0" />
+    <PackageReference Include="Serilog.Formatting.Compact.Reader" Version="1.0.1" />
+    <PackageReference Include="Serilog.Sinks.File" Version="4.0.0" />
+    <PackageReference Include="SharpCompress" Version="0.19.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>C:\Users\vladi\.nuget\packages\microsoft.netcore.app\2.0.0\ref\netcoreapp2.0\System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+      <HintPath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.2\System.Threading.Tasks.Parallel.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
